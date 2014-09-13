@@ -1,0 +1,1072 @@
+/*  
+Theme: My VCard
+Author: Arthur Gapusan (Jimmyme)
+Email: gapusan@gmail.com
+*/
+
+/* ------------------------------------------------------------------- */
+/* -------------------------- CSS STRUCTURE -------------------------- */
+/* ------------------------------------------------------------------- */
+/*
+
+1. Site Structure
+	1.1 Layout Structure (Boxed Layout)
+	1.2 Paging of Shuffle plugin
+	1.3 Navigation
+2. Site Components	 
+	2.1 Logo
+	2.2 Home Icons
+	2.3 Footer
+3. Site Functions Style
+	3.1 Tooltip (This is the tooltip in the main navigation) 
+	3.2 Grid
+	3.3 Vtip. Tooltip for links
+	3.4 Quotes
+	3.5 Image Styles
+	3.6 List
+	3.7 Misc Styles
+4. Page Related Styles
+	4.1 Contact Page
+	4.2 Connect Section on Contact Pag
+	4.3 About Page
+	4.4 Portfolio Page
+	
+	
+*/
+/* ------------------------------------------------------------------- */
+
+
+/* =================================================================== */
+/* 1. Site Structure */
+/* =================================================================== */
+
+	/* ------------------------------------------------------------------- */
+	/* 1.1 Layout Structure */
+	/* ------------------------------------------------------------------- */  		
+
+	body {
+		overflow: hidden;
+		background: #f6f6f7 url(../images/bg.jpg) repeat-x top;
+
+	}
+	
+	.container {
+		width: 780px; 
+		margin: 0 auto; 
+		margin-top: 30px;
+	}
+	
+	.slideshow { 
+		width: 780px; 
+		float: left;
+	}
+	
+	
+	/* ------ Top ------ */
+
+	.top {
+		float: left;
+		width: 710px;
+		height: 24px;
+		background: url(../images/container_box.png) no-repeat top;
+	}	
+	
+	/* ------ Content ------ */
+	
+	.content-container {
+		width: 780px;
+		height: 418px;
+		float: left;
+		background: url(../images/container_box.png) no-repeat left bottom;
+		padding-bottom: 24px;
+	}
+		
+	.content {
+		width: 710px;
+		height: 418px;
+		float: left;
+	}
+	
+	.content-padding {
+		width: 602px;
+		height: 343px;
+		margin: 0 auto;
+		padding: 30px;
+		background: #fff url(../images/content_bg.png) no-repeat center top;
+		position: relative;
+	}
+	
+	.content-bottom {
+		width: 662px;
+		margin: 0 auto;
+		background: url(../images/content_bg.png) no-repeat center bottom;
+		height: 15px;
+	}
+	
+	.clear {
+		clear: both;
+		overflow: hidden;
+	}
+	
+	
+	/* --------------------------------------------------------------------------- */
+	/* 1.2  Paging of Shuffle plugin (which overlaps the navigation. Triggers ".nav a") */
+	/* --------------------------------------------------------------------------- */  		
+	
+	
+	.paging {
+		height: 0px;
+		float: right;
+		position: relative;
+		top: 67px;
+		z-index: 999999;
+		margin-left: 40px;
+		padding-top: 0px;
+		width: 70px;
+		left: -4px;
+	
+	}	
+		
+	.paging a {
+		display: block;
+		padding-left: 12px;
+		cursor: pointer;
+		position: relative;
+		left: 0px;
+		
+		z-index: 99; /* z-index here is for IE6 png fix bug */
+		position: relative;
+		top: 0px;
+		height:47px;
+		
+		background: url(../images/transparent.png) no-repeat left top; /* IE8 FIX */
+		
+		float: left;
+		clear: both;
+		margin-top: 8px;
+		outline: 0;
+		text-indent: -3000px; 
+		width: 40px;
+		
+	}
+	.paging a span {
+		position: relative;
+		left: 32px;
+		padding: 0px 20px 0px 9px;
+		padding-left: 0px;
+		padding-right: 44px;
+		color: #333;
+		float: left;
+		margin-right: 22px;
+		height:45px;
+	}	
+	
+
+	/* ------------------------------------------------------------------- */
+	/* 1.3 Navigation */
+	/* ------------------------------------------------------------------- */  		
+	
+	
+	.nav-container {
+		float: left;
+		width: 55px;
+		margin-top: 17px;
+		height: 300px;
+	}
+	
+	
+	
+	.nav {
+		width: 55px;
+		display: block;
+		background: url(../images/tab_tooltip.png) no-repeat left top;
+		float: left;
+		cursor: pointer;
+		position: relative;
+		z-index: 99; /* z-index here is for IE6 png fix bug */
+		position: relative;
+		top: 6px;
+		left: -1px;
+		margin-left: -3px;
+	}
+	
+	.nav a {
+		background: url(../images/tab_tooltip.png) no-repeat -55px bottom;
+		position: relative;
+		top: 33px;
+		width: 46px;
+		padding-bottom: 35px;
+		padding-left: 9px;
+		color: #333;
+		float: left;
+		
+	}
+	.nav a span {
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+		display: block;
+	}
+		
+		.nav a img {
+			border: 0;
+		}
+	
+	
+/* =================================================================== */
+/* 2. Site Components */
+/* =================================================================== */
+
+
+	
+	/* ------------------------------------------------------------------- */
+	/* 2.1 Logo */
+	/* ------------------------------------------------------------------- */  		
+	
+		
+	#logo {
+		margin: 0 auto;
+		width: 300px;
+		height: 70px;
+		margin-top: 143px;
+	}
+	
+	#mainImage{
+		width: 267px;
+		height: 393px;
+		float:left; 
+	}
+	#title{ width: 260px; float: right; margin-top: 210px; text-align: right; }
+	#title h1{ font-size: 40px; margin-bottom: 0px;}
+	
+	
+	/* ------------------------------------------------------------------- */
+	/* 2.2 Home Icons */
+	/* ------------------------------------------------------------------- */  
+
+	
+	#home-icons {
+		display: block;
+		float: right;
+		position: absolute;
+		bottom: 10px;
+		right: 25px;
+		height: 32px;
+	}
+	
+		#home-icons a {
+			margin-left: 5px;
+		}
+	
+	
+	/* ------------------------------------------------------------------- */
+	/* 2.3 Footer  */
+	/* ------------------------------------------------------------------- */  
+
+	
+	#footer {
+		padding: 10px;
+		font-size: 12px;
+	}
+	
+	
+/* =================================================================== */
+/* 3. Site Functions Style */
+/* =================================================================== */
+
+	
+	/* ------------------------------------------------------------------- */
+	/* 3.1 Tooltip (This is the tooltip in the main navigation) */
+	/* ------------------------------------------------------------------- */  
+
+	
+	/* tooltip styling. by default the element to be styled is .tooltip  */
+	.tooltip {
+		background: url(../images/tab_tooltip.png) no-repeat right top;
+		display:none;
+		font-size:17px;
+		height:30px;
+		width:119px;
+		padding:20px;
+		padding-left: 26px;
+		color:#555;	
+		position: relative;
+		top: 15px;
+		text-align: center;
+	}
+	
+	
+	/* ------------------------------------------------------------------- */
+	/* 3.2 Grid */
+	/* ------------------------------------------------------------------- */  
+
+		
+	.grid_6 {
+		float: left;
+		margin-right: 30px;	
+		width: 285px;
+	}
+	
+	.grid_8 {
+		float: left;
+		margin-right: 30px;	
+		width: 390px;
+	}
+	
+	.grid_4 {
+		float: left;
+		margin-right: 30px;	
+		width: 180px;
+	}
+	
+	.grid_3 {
+		float: left;
+		margin-right: 30px;	
+		width: 135px;
+	}
+	
+	
+	.last {
+		margin-right: 0;
+	}
+
+	
+	/* ------------------------------------------------------------------- */
+	/* 3.3 Vtip. Tooltip for links */
+	/* ------------------------------------------------------------------- */  
+								
+
+	p#vtip { 
+		display: none; 
+		position: absolute; 
+		padding: 5px 15px; 
+		left: 15px; 
+		top: -120px;
+		font-size: 11px;
+		font-weight: bold;
+		background-color: white; 
+		border: 1px solid #b5b5b5; 
+		z-index: 9999;
+	}
+	
+	
+	
+	
+	/* ------------------------------------------------------------------- */
+	/* 3.4 Quotes */
+	/* ------------------------------------------------------------------- */  
+			 
+			 
+	.quote, .quote_right, .quote_left, .intro-quote, .quote-small {
+		float: right;
+		color: #555;
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-size: 19px;
+		font-style: italic;
+		padding: 20px 0 20px 25px;
+	}
+		
+	.quote-small {
+		font-size: 16px;
+		padding: 0px 0 7px 25px;
+	}
+		
+	.quote_right, .quote_left {
+		width: 33%;
+	}
+
+	.quote_left {
+		float: left;
+		padding: 20px 25px 20px 0;
+	}
+				 
+	.quote, .intro-quote {
+		float: left;
+		padding: 0;
+	}
+
+		.intro-quote {
+			padding: 20px 0 0px 0;
+		}
+
+	.quote p {
+		padding-left: 40px;
+		background:url(../images/quote.png) no-repeat 0px 2px;
+		padding-bottom: 15px;
+	}
+		
+	p.quote, p.quote-small {
+		float: left;
+		padding-left: 40px;
+		background:url(../images/quote.png) no-repeat 0px 2px;
+	}
+		
+	/* author class for testimonial */
+		
+	p.author{
+		text-align:right;
+		font-size:12px;
+		font-weight:bold;
+		font-family: Tahoma, arial;
+		font-style:normal;	
+		margin-top: -20px;
+	}
+				
+
+	
+	/* ------------------------------------------------------------------- */
+	/* 3.5 Image Styles */
+	/* ------------------------------------------------------------------- */  
+	
+		
+	.image-left, .image-border, .image-right, .header-image-left, .header-image-right, .image-thumb-left, .image-thumb-right {
+		padding:4px;
+		margin: 10px 10px 3px 0;
+		border: 1px #cdcdcd solid;
+		background: #fafafa;
+		float: left;
+	}
+
+	.image-thumb-left, .image-thumb-right {
+		float: left;
+		padding: 2px;
+		border: 1px #ddd solid;
+	}
+
+	.image-thumb-right {
+		float: right;
+	}	
+
+	.image-right {
+		float: right;
+		margin:5px 0px 3px 10px;
+	}
+
+	.image-margin-left {
+		margin:0 10px 3px 0;
+		float: left;
+	}
+	
+
+	/* ------------------------------------------------------------------- */
+	/* 3.6 List */
+	/* ------------------------------------------------------------------- */  	
+			
+
+	ul {
+		list-style: square;
+		margin-left: 30px;
+	}	
+			
+	ol li {
+		padding-bottom: 5px;
+		padding-left:5px;
+	}
+	
+		ul.list, ul.list-check, ul.list-articles, .list-bg {
+				list-style: none;
+				margin: 0;
+				margin-bottom: 15px;		
+			}
+				
+			ul.list-nb {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				padding-bottom: 10px;
+			}
+						
+			ol.list {
+				margin-left: 30px;
+			}
+						
+				ul.list li, ul.list-check li, ul.list-articles li{
+					background: url(../images/bullet.png) no-repeat left 10px;
+					border-bottom: 1px #aaa dotted;
+					padding: 5px 0 5px 20px;
+				}
+				
+	.list-bg {
+		list-style: none;
+		margin: 0;
+		margin-bottom: 15px;		
+	}
+			
+		.list-bg li {
+			float: left;
+			width: 100%;
+			
+			background: url(../images/list_bg.png) no-repeat left 10px;
+			padding-left: 20px;
+		}
+	
+	.styled-list, .styled-list2 {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	.styled-list li, .styled-list2 li{
+		background: transparent url("../images/footermenu_arrow.png") no-repeat scroll left 12px;
+		padding: 4px 2px 3px 12px;
+	}
+	
+	.styled-list li, .styled-list2 li {
+		text-align: left;
+		padding: 5px 0;
+		padding-left: 15px;
+		float: left;
+		width: 270px;	
+		border-bottom: 1px #999 dotted;
+	}
+				
+	.styled-list2 li { 
+		width: 127px;
+	}		
+		
+		
+	/* ------------------------------------------------------------------- */
+	/* 3.7 Misc Styles */
+	/* ------------------------------------------------------------------- */  
+	
+	/* Dividers */
+	.divider-5, .divider-10, .divider-15, .divider-20, .divider-30, .divider-45, .divider-60 {
+		float: left;
+		height: 45px;
+		overflow: hidden;
+		margin-top: 0;
+		width: 100%;
+	}
+	
+	.divider-45 { height: 45px; }
+	.divider-30 { height: 30px; }
+	.divider-20 { height: 20px; }
+	.divider-15 { height: 15px; }
+	.divider-10 { height: 10px; }
+	.divider-5 { height: 5px; }
+	
+	
+	
+	h2.border, h3.border, h4.border {
+		padding-bottom: 15px;
+		background:url(../images/border_bottom.png) repeat-x left bottom;
+	}
+	
+	h3.border {
+		margin-top: 4px;
+	}
+	
+	h4.border {
+		background:url(../images/item_dotted_bg.png) repeat-x left bottom;
+	}
+	
+	
+	.grayscale span {
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+		display: block;
+		float: left;
+		margin: 0px 3px;
+	}
+	
+/* =================================================================== */
+/* 4. Page Related Styles */
+/* =================================================================== */
+
+	/* ------------------------------------------------------------------- */
+	/* 4.1 Contact Page */
+	/* ------------------------------------------------------------------- */  
+		
+	#contact-form {
+		z-index: 1;
+		background: transparent url(../images/thumb_shadow_212.png) repeat top;
+	
+	}
+	
+	form {
+		margin: 0;
+		padding: 0;
+	}
+			
+	.rowElem {
+		margin-bottom: 15px;
+		position: relative;
+		float: left;
+		clear: both;
+	}
+	
+	.field {
+		float: left;
+		background: url(../images/field.png) no-repeat top left;
+		height: 31px;
+		width: 271px;
+		padding: 0;
+		padding-left: 10px;
+		margin: 0;
+	}
+	
+	.field input {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		height: 31px;
+		line-height: 31px;
+		width: 261px;
+		background: url(../images/field.png) no-repeat bottom right;
+		padding-right: 10px;
+		padding-left: 0;
+		outline: 0;
+	}
+	
+	textarea#message_input {
+		background: url(../images/textarea.png) no-repeat bottom right;
+		width: 261px;
+		height: 71px;
+		padding: 10px;
+		border: 0;
+		outline: 0;
+	}
+		
+		
+	label, .label-80 {
+		float: left;
+		width: 104px;
+		font-weight: bold;
+		padding: 0px 5px 5px 0px;
+		font-size: 12px;
+	}
+	
+
+	.contact-select {
+		width: 250px;
+	}
+		
+	#message_input {
+		width: 271px;
+		height: 81px;
+	}
+
+	#feedback {
+		margin-bottom: 15px;
+	}
+
+	#feedback p {
+		margin-bottom: 5px;
+	}
+
+	p.error {
+		display:none; 
+		padding:5px 10px; 
+		color:#FF3300; 
+		font-weight:bold;
+		border: 1px #f0c020 solid;
+		background-color:#ffffdd;
+	}
+	
+
+	p#submit {
+		text-align:right;
+	}
+
+	p#success {
+		display:none; 
+		font-size:16px; 
+		text-align:left; 
+		margin-bottom:20px; 
+		color:#00CC00; 
+		font-style:italic;
+	}
+
+	#note {
+		padding: 10px;
+		font-size: 12px;
+		border: 1px #ccc solid;
+		display: none;
+		background-color:#fff;
+		text-align: center;
+		margin-bottom: 10px;
+		color: #555;
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-size: 15px;
+		font-style: italic;
+		padding-bottom: 15px;
+	}
+
+	.notification_ok {
+		color: #606060;	
+	}
+		
+	button {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.form-submit {
+		background: #555;
+		border: 0;
+		cursor: pointer;
+
+
+		margin: 0;
+		padding: 2px 0;
+		float: left;
+		text-indent: -3000px;
+	}
+
+	.form-submit span {
+		padding: 5px 30px;
+		color: #ddd;
+		float: left;
+		border: 1px #848484 solid;
+		font-size: 23px;
+		font-family: Arial,Helvetica,sans-serif;
+		
+	}
+
+	.form-submit:hover {
+		color: #777;
+	}
+
+	.form-submit {
+		padding: 0;
+		line-height: 31px;
+		height: 31px;
+		
+		background: url(../images/submit_button.png) no-repeat top left;
+		margin-top: 0px;
+		width: 91px;
+		border: none;
+		margin-right: 5px;
+
+		cursor: pointer;
+		color: #606060;
+		outline: 0;
+	}
+
+	.form-submit:hover {
+		background: url(../images/submit_button.png) no-repeat left -138px;
+		color: #6f6f6f;
+		outline: 0;
+	}
+
+	.error1, .error2, .error3, .error4 {
+		float: left;
+		width: 110px;
+		height: 26px;
+		padding-top:3px;
+		position: absolute;
+		top: 0px;
+		left: 278px;
+		text-align: center;
+		font-size: 11px;
+		
+		color:#FF3300; 
+		font-weight:bold;
+		border: 1px #f0c020 solid;
+		background-color:#ffffdd;
+		display: none;
+	}
+	
+	.error3 {
+		top: 95px;
+		left: 278px;
+	}
+	
+	
+	/* ------------------------------------------------------------------- */
+	/* 4.2 Connect Section on Contact Page */
+	/* ------------------------------------------------------------------- */  
+		
+
+	#connect-menu ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	
+	#connect-menu ul li {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	
+	.connect {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 10px;
+		background:url(../images/item_dotted_bg.png) repeat-x left bottom;
+		clear: both;
+		height: 32px;
+		position: relative;
+	}
+	
+	.connect a {
+		position: absolute;
+		display: block;
+		width: 100%;
+	}
+	
+	.connect a:hover {
+		color: #888;
+	}
+	
+	.connect span.icon{
+		float: left;
+		display: block;
+		width: 32px;
+		height: 32px;
+		overflow: hidden;
+	}
+	
+	.connect .icon img {
+		background-color: #f8f8f8; /* an easy fix on ie png issue. should be the same as the content background. */
+	}
+	
+	.connect span.text{
+		float: left;
+		display: block;
+		margin-left: 15px;
+		font-size: 13px;
+		font-weight: bold;
+		margin-top: 5px;
+	}
+	
+	/* ------------------------------------------------------------------- */
+	/* 4.3 About Page */
+	/* ------------------------------------------------------------------- */  
+		
+	
+	/* Progress Bar in the About Page */
+		
+	.progress {
+		float: left;
+		clear: both;
+		padding: 3px 0px;
+		position: relative;
+		width: 265px;
+	}
+	
+	.progressBar {
+		position: relative;
+		top: 5px;
+		background: url(../images/progressbar_100_15.png) repeat-x left bottom;
+		width: 104px;
+		height: 15px;
+		float: right;
+		text-align: center;
+		font-size: 10px;
+	}
+		
+		.progressValue {
+			position: relative;
+			background: url(../images/progressbar_bg_100.png) no-repeat 0px 2px;
+			width: 100px;
+			height: 13px;
+			display: block;
+			left: 2px;
+			top: 0px;
+		}
+		
+		.progressValue span {
+			position: relative;
+			top: -4px;
+			text-align: center;
+			font-weight: bold;
+			color: #555;
+		}
+	
+		.progress label {
+			width: 156px;
+			font-size: 12px;
+			position: relative;
+			top: 2px;
+			font-weight: normal;
+			float: left;
+		}
+			
+		.progress .text {
+			position: absolute;
+			top: 4px;
+			margin-left: 55px;
+		}
+		
+	/* ------------------------------------------------------------------- */
+	/* 4.4 Portfolio Page */
+	/* ------------------------------------------------------------------- */  
+
+	/* Filterable Styles */
+	
+	div#filterable-container { 
+		float: left; 
+		width: 600px; 
+		z-index: 0;
+	}
+	.filter-text {
+		float: left;
+		position: relative;
+		top: 8px;
+	}
+	
+	.filter-text h4 {
+		font-size: 13px;
+	}
+	
+	ul#filter { 
+		float: right; 
+		font-size: 15px; 
+		list-style: none;
+		margin-left: 0px; 
+		margin-bottom: 30px;
+		margin-right: 6px;
+	}
+	
+	ul#filter li { 
+		float: left;
+		line-height: 31px;
+		padding: 0px 0px;	
+	}
+	ul#filter a { color: #999; text-decoration: none; }
+	ul#filter li.current a, ul#filter a:hover { }
+	ul#filter li a { 
+		margin-left: 0px;
+		padding-left: 25px;
+		font-size: 12px;
+		background: url('../images/filter_button.png') no-repeat scroll left -60px; 
+		color: #606060;
+		padding-top: 8px;
+		padding-bottom: 7px;
+	}
+	
+	ul#filter li a span { 
+		margin-left: 0px;
+		
+		padding-right: 25px;
+		padding-top: 8px;
+		padding-bottom: 7px;
+		
+		font-size: 12px;
+		background: url('../images/filter_button.png') no-repeat scroll right -60px; 
+		color: #6f6f6f;
+	}
+	
+	ul#filter li a.first {
+		background: url('../images/filter_button.png') no-repeat scroll left top; 
+	}
+	
+	ul#filter li.current a.first {
+		background: url('../images/filter_button.png') no-repeat scroll left -30px;
+	}
+
+	ul#filter li.current a, ul#filter li a:hover { 
+		background: url('../images/filter_button.png') no-repeat scroll left -90px;
+		padding-left: 25px;
+		margin-left: 0px;
+		font-size: 12px;
+		color: #777;
+	}
+	
+	ul#filter li.current a span, ul#filter li a:hover  span { 
+		background: url('../images/filter_button.png') no-repeat scroll right -90px;
+		margin-left: 0px;
+		font-size: 12px;
+		color: #777;
+	}
+	
+	ul#filter li a.last span {
+		padding-top: 8px;
+		padding-bottom: 7px;
+		padding-right: 25px;
+		background: url('../images/filter_button.png') no-repeat scroll right -120px;
+		position: relative;
+		left: 6px;
+	}
+	
+	ul#filter li.current a.last span {
+		padding-top: 8px;
+		padding-bottom: 7px;
+		padding-right: 25px;
+		background: url('../images/filter_button.png') no-repeat scroll right -150px;
+		position: relative;
+		left: 6px;
+	}
+	
+	ul#filter li a.first:hover  {
+		background: url('../images/filter_button.png') no-repeat scroll left -30px;
+	}
+	
+	ul#filter li a.last:hover span {
+		background: url('../images/filter_button.png') no-repeat scroll right -150px;
+	}
+	
+		
+	div#portfolio-container { 
+		float: left;  
+		margin-left: 0; 
+		width: 600px; 
+		position: relative;
+		margin-top: 50px;
+		clear: both;
+		margin: 0 auto;
+		/* Set initial height of filterable portfolio's container at 190px */
+		height: 190px;
+	}
+	
+	div#portfolio-container div.pdiv { 	
+		float: left; 
+		margin: 0 20px 0px 0; 
+		position: absolute;
+		background: transparent url(../images/thumb_shadow_212.png) no-repeat bottom;
+		width: 135px;
+		z-index: 0;
+	}
+
+	div#portfolio-container a { 
+		display: block; 
+		width: 100%; 
+		background: #fff;
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	#portfolio-container ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#portfolio-container li 
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	div#portfolio-container a:hover { text-decoration: none; }
+	div#portfolio-container img {
+		border: 1px solid #dedede; 
+		padding: 4px;
+		background: #fff;
+		display:block;
+		z-index: 0;
+	}
+
+	#portfolio-container img{
+		z-index: 0;
+	}
+
+	#portfolio-container h5{
+		margin-bottom: 0;
+		border-bottom: 1px #aaa dotted;
+		margin-left: 6px;
+	}
+
+	#portfolio-container span{
+		margin-left: 6px;
+		color: #777;
+		font-style: italic;
+	}
+	
+	
